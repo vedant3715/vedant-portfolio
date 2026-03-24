@@ -30,7 +30,7 @@ export default function Home() {
       <nav className="fixed top-0 w-full z-50 bg-[#FBFBFB]/50 backdrop-blur-md border-b border-black/5 px-6 py-4 flex justify-between items-center transition-all">
         <div className="font-bold tracking-tight uppercase text-lg hidden sm:block">Vedant Thakur</div>
         <div className="font-bold tracking-tight uppercase text-lg sm:hidden">VT</div>
-        
+
         <div className="flex gap-4 items-center">
           <ul className="hidden md:flex gap-6 text-sm font-medium text-black/60 mr-4">
             <li><a href="#about" className="hover:text-black transition-colors">About</a></li>
@@ -44,28 +44,28 @@ export default function Home() {
 
       {/* Section 1: Hero */}
       <section id="about" className="relative z-10 min-h-screen flex flex-col items-center justify-center pt-24 px-4 sm:px-8 text-center">
-        <motion.div 
+        <motion.div
           className="max-w-4xl mx-auto flex flex-col items-center"
           variants={STAGGER}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
         >
-          <motion.h1 
+          <motion.h1
             variants={FADE_UP}
             className="font-serif text-5xl sm:text-7xl md:text-8xl lg:text-[10rem] leading-[0.9] tracking-tighter text-black font-semibold uppercase mb-6"
           >
             Vedant<br />Thakur
           </motion.h1>
-          
-          <motion.p 
+
+          <motion.p
             variants={FADE_UP}
             className="text-lg sm:text-xl md:text-2xl font-sans text-black/70 max-w-2xl text-center mb-10 balanced-wrap"
           >
-            A developer crafting modern digital stories through code and creativity.
+            Fullstack Developer & Freelancer
           </motion.p>
-          
-          <motion.a 
+
+          <motion.a
             variants={FADE_UP}
             href="#projects"
             className="bg-black text-white px-8 py-4 rounded-full text-sm sm:text-base font-medium flex items-center gap-2 hover:bg-black/80 transition-transform active:scale-95 group"
@@ -75,13 +75,13 @@ export default function Home() {
           </motion.a>
 
           {/* Central Illustration - Creation of Adam hands */}
-          <motion.div 
+          <motion.div
             variants={FADE_UP}
             className="mt-16 sm:mt-24 w-full max-w-3xl aspect-[16/9] relative grayscale contrast-125 saturate-0 opacity-90 mx-auto"
           >
             {/* The image uses our generated hand illustration. It will blend flawlessly due to the monochrome/dither style */}
-            <Image 
-              src="/hero-hands.png" 
+            <Image
+              src="/hero-hands.png"
               alt="Human and cybernetic hand touching, representing creation and code."
               fill
               className="object-contain"
@@ -91,7 +91,7 @@ export default function Home() {
         </motion.div>
 
         {/* Scroll Indicator */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.5, duration: 1 }}
@@ -99,7 +99,7 @@ export default function Home() {
         >
           <span>Scroll down</span>
           <div className="w-[1px] h-8 bg-black/20 overflow-hidden">
-            <motion.div 
+            <motion.div
               className="w-full h-full bg-black/60"
               animate={{ y: ["-100%", "100%"] }}
               transition={{ repeat: Infinity, duration: 2, ease: "linear" as const }}
@@ -110,14 +110,14 @@ export default function Home() {
 
       {/* Section 2: Projects */}
       <section id="projects" className="relative z-10 min-h-screen py-32 px-4 sm:px-8 border-t border-black/10">
-        <motion.div 
+        <motion.div
           className="max-w-6xl mx-auto"
           variants={STAGGER}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, margin: "-100px" }}
         >
-          <motion.h2 
+          <motion.h2
             variants={FADE_UP}
             className="font-serif text-5xl sm:text-7xl font-semibold tracking-tight text-center mb-20"
           >
@@ -126,7 +126,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Project 1 */}
-            <motion.div 
+            <motion.div
               variants={FADE_UP}
               className="group bg-[#FBFBFB]/40 backdrop-blur-lg border border-black/10 p-8 rounded-2xl hover:bg-white/80 transition-all duration-300 relative overflow-hidden flex flex-col items-start gap-6 cursor-pointer"
             >
@@ -142,7 +142,7 @@ export default function Home() {
             </motion.div>
 
             {/* Project 2 */}
-            <motion.div 
+            <motion.div
               variants={FADE_UP}
               className="group bg-[#FBFBFB]/40 backdrop-blur-lg border border-black/10 p-8 rounded-2xl hover:bg-white/80 transition-all duration-300 relative overflow-hidden flex flex-col items-start gap-6 cursor-pointer"
             >
@@ -158,7 +158,7 @@ export default function Home() {
             </motion.div>
 
             {/* Project 3 */}
-            <motion.div 
+            <motion.div
               variants={FADE_UP}
               className="group bg-[#FBFBFB]/40 backdrop-blur-lg border border-black/10 p-8 rounded-2xl hover:bg-white/80 transition-all duration-300 relative overflow-hidden flex flex-col items-start gap-6 cursor-pointer"
             >
@@ -193,7 +193,7 @@ export default function Home() {
             <p className="mt-8 text-black/60 text-lg max-w-sm font-sans">
               Open for opportunities, creative collaborations, or just a coffee chat. Reach out through my social channels.
             </p>
-            <a 
+            <a
               href="mailto:contact@vedantthakur.com"
               className="inline-flex mt-12 bg-black text-white px-8 py-4 rounded-full font-medium sm:text-lg hover:pr-6 hover:pl-10 transition-all items-center gap-3 group"
             >
