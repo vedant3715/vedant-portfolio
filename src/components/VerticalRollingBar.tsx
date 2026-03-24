@@ -20,7 +20,7 @@ export default function VerticalRollingBar() {
         className="flex flex-col items-center gap-12 sm:gap-16 relative z-10"
         animate={{ y: ["0%", "-50%"] }}
         transition={{
-          ease: "linear",
+          ease: "linear" as const,
           duration: 20,
           repeat: Infinity,
         }}

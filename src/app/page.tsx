@@ -8,7 +8,7 @@ import VerticalRollingBar from "@/components/VerticalRollingBar";
 export default function Home() {
   const FADE_UP: Variants = {
     hidden: { opacity: 0, y: 30 },
-    show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
+    show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" as const } }
   };
 
   const STAGGER: Variants = {
@@ -102,7 +102,7 @@ export default function Home() {
             <motion.div 
               className="w-full h-full bg-black/60"
               animate={{ y: ["-100%", "100%"] }}
-              transition={{ repeat: Infinity, duration: 2, ease: "linear" }}
+              transition={{ repeat: Infinity, duration: 2, ease: "linear" as const }}
             />
           </div>
         </motion.div>
@@ -185,7 +185,7 @@ export default function Home() {
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 1, ease: "easeOut" }}
+            transition={{ duration: 1, ease: "easeOut" as const }}
           >
             <h2 className="font-serif text-5xl sm:text-7xl md:text-8xl tracking-tighter font-bold uppercase leading-[0.9]">
               Let&apos;s<br />Collaborate
